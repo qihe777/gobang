@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a2a"
+    tools:context=".playactivity.AiToAiActivity">
+
+    <ImageView
+        android:id="@+id/Man1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/human_chess"
+        app:layout_constraintEnd_toStartOf="@+id/blackName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/black_ai" />
+
+    <ImageView
+        android:id="@+id/white_AI"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/human_chess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/whiteName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_ai" />
+
+    <com.example.wuziqi.playview.AiFightboard
+        android:id="@+id/human_chess"
+        android:layout_width="0dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:background="@drawable/a2a_btn"
+        android:text="暂停"
+        android:textColor="#ff0000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/giveup"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/giveup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/a2a_btn"
+        android:text="重来"
+        android:textColor="#0000ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/human_chess" />
+
+
+    <TextView
+        android:id="@+id/blackName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:text="BlackAI"
+        app:layout_constraintBottom_toBottomOf="@+id/Man1"
+        app:layout_constraintEnd_toStartOf="@+id/whiteName"
+        app:layout_constraintStart_toEndOf="@+id/Man1" />
+
+    <TextView
+        android:id="@+id/whiteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="10dp"
+        android:text="WhiteAI"
+        app:layout_constraintBottom_toTopOf="@+id/human_chess"
+        app:layout_constraintEnd_toStartOf="@+id/white_AI"
+        app:layout_constraintStart_toEndOf="@+id/blackName" />
+
+
+</android.support.constraint.ConstraintLayout>

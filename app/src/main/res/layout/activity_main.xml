@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back_ground"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <!--android:launchMode="singleInstance"-->
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:sb_button_color="#ffffff"
+        app:sb_shadow_color="#888888"
+        app:sb_background="#ffffff"
+        app:sb_checkline_color="#ff0000"
+        app:sb_checked_color="#00ff00"
+        app:sb_uncheckcircle_color="#00ff00"
+        app:sb_checked="true" />
+
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/menu_btn"
+
+        android:text="机器对战"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/menu_btn"
+
+        android:text="人机对战"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/menu_btn"
+
+        android:text="联机对战"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+
+</LinearLayout>
