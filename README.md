@@ -1,7 +1,11 @@
 # gobang
 android五子棋游戏gobang，联机对战，人机算法
 
-后台使用springboot+webservice实现。
+其中有apk，可以下载尝试。
+
+android端使用了sweetalert对话框库：https://github.com/F0RIS/sweet-alert-dialog
+五子棋算法实现参考了（抄袭了）：https://github.com/lihongxun945/gobang
+后台使用springboot+webservice实现。其中webservice使用的是okhttp的库
 
 程序实例：
 
@@ -14,9 +18,8 @@ android五子棋游戏gobang，联机对战，人机算法
 此程序仍然存在bug：
 1.人赢了之后，机器仍然会下棋
 2.大厅界面，以及游戏界面不能切屏，否则会接收到的数据无法显示。
-3.
 
 需要做的改进：
 1.接受邀请应该设置为全局对话框；
 2.把服务器发来的消息作为临时变量存储起来，以便切屏之后仍然可以显示接收到的消息。
-3.完善计时功能，以及
+3.完善计时功能，以及增加消息对话功能。
